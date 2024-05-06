@@ -72,7 +72,7 @@ class Alert:
             'service_name': service_name,
             'description': description,
             'severity': severity,
-            'start_time': start_time,
+            'start_time': int(start_time),
             'service_group': service_group,
             'device': device,
             'interface_abbr_name': interface_abbr_name,
