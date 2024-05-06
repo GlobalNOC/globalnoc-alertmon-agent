@@ -65,14 +65,16 @@ class Alert:
         
         if( bgp_peer_id is not None and (bgp_peer_id < 0 or bgp_peer_id > 2147483647) ):
             raise AlertError(f"invalid value for bgp_peer_id")
-        
+
+        if( start_time is not None ):
+            start_time = int(start_time)
 
         self._alert = {
             'node_name': node_name,
             'service_name': service_name,
             'description': description,
             'severity': severity,
-            'start_time': int(start_time),
+            'start_time': start_time,
             'service_group': service_group,
             'device': device,
             'interface_abbr_name': interface_abbr_name,
