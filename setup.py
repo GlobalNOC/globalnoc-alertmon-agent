@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
   name="globalnoc-alertmon-agent",
-  version="1.0.3",
+  version="1.0.4",
   author="GlobalNOC Systems Engineering",
   author_email="syseng@globalnoc.iu.edu",
   python_requires='>=3.8.11, <4.0.0',
